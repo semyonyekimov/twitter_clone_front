@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "react-app",
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "react", "import", "react-hooks"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": 0,
+    "no-console": "error",
+    "import/no-unresolved": "off",
+    "import/named": "error",
+    "import/namespace": "error",
+    "import/no-duplicates": "error",
+    "no-template-curly-in-string": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ]
+  }
+}
